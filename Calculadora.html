@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Suma</h1>
+    <form action="" method="get">
+        <input type="number" id="a" value="1">
+        <input type="number" id="b" value="2">
+    </form>
+    <button onclick="suma()"></button>
+
+</body>
+<script>
+    var a = document.getElementById("a")
+    var aValor = a.value
+    var b = document.getElementById("b")
+    var bValor = b.value
+    function suma(){
+        let sumaRes = aValor + bValor;
+        console.log(aValor +"+"+ bValor +" es igual a = " + sumaRes)
+        /*const SUMA = A + B;
+        alert(SUMA)*/
+        }
+    //console.log(resultadoSuma(1,1));
+
+    let c = 10;
+let d = 20;
+let sumaa = c + d;
+console.log(sumaa);
+</script>
+</html>
