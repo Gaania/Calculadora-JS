@@ -8,17 +8,14 @@
 <body>
     <h1>Suma</h1>
     <form action="" method="get">
-        <input type="number" id="a" value="1">
-        <input type="number" id="b" value="2">
+        <input type="number" id="a" onkeyup="saberNumero('a')">
+        <input type="number" id="b" onkeyup="saberNumero('b')">
     </form>
-    <button onclick="suma()"></button>
-
+    <button onclick="suma()">Sumar</button>
+    <button onclick="resta()">Restar</button>
+    <button onclick="multiplicacion()">Multiplicar</button>
+    <button onclick="division()">Dividir</button>
+    <p id="res">Resultado: </p>
 </body>
-<script>
-    var aValor = parseInt(a.value)
-    var bValor = parseInt(b.value)
-    function suma(){
-        console.log(aValor+bValor)
-        }
-</script>
+<script src="./functions.js"></script>
 </html>
